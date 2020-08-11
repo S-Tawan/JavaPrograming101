@@ -16,6 +16,16 @@ public class Main {
         singha.attack(pee);
         pee.doubleAttack(singha);
         singha.doubleAttack(pee);
+        singha.doubleAttack(pee);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
+        pee.attack(singha);
 
     }
 }

@@ -27,9 +27,9 @@ public class Knight {
     }
 
     protected void useAction(Knight a, Knight b, String action) {
-        if (b != null){
+        if (b != null) {
             System.out.printf("%s %s %s%n", a.getName(), action, b.getName());
-        }else{
+        } else {
             System.out.printf("%s use %s%n", a.getName(), action);
         }
 
@@ -60,12 +60,15 @@ public class Knight {
 
     }
 
-    protected boolean hasMp(double mp,double use){
-
-        if (use <= mp){
-
+    protected boolean useMp(double use) {
+        double mp = this.getMp() - use;
+        if (mp >= 0) {
+            this.setMp(mp);
+            System.out.println("\t"+this.getName() +" Use " + use +" Mp => " +this.getMp());
+            return true;
         }
-
+        System.out.println("\tCan't use skill");
+        return false;
     }
 
     protected void doubleAttack(Knight target) {
@@ -73,13 +76,15 @@ public class Knight {
         useAction(this, target, "Double Attack");
         if (isDead(target))
             return;
-        target.setHp(Math.max(0, target.getHp() - Math.max(0, this.getAtk() * 2 - target.getDef())));
-        affect(target, "Hp", target::getHp);
+        if (this.useMp(20)){
+            target.setHp(Math.max(0, target.getHp() - Math.max(0, this.getAtk() * 2 - target.getDef())));
+            affect(target, "Hp", target::getHp);
+        }
 
     }
 
     protected void extraHp() {
-        useAction(this,null,"ExtraHp");
+        useAction(this, null, "ExtraHp");
         this.setHp(this.getHp() * 2);
         affect(this, "Hp", this::getHp);
     }
