@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1182d6ad-4da7-4edf-908d-90bd3579660f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Lab4/Ex2/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab4/Ex2/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab5/Ex1/Mage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab5/Ex1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab5/Ex2/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab5/Ex2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,44 +65,49 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tl-nbapp-v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Lab5" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Ex1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab3.Ex1" />
-      <module name="JavaPrograming101" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ex2 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab3.Ex2" />
-      <module name="JavaPrograming101" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\singc\Desktop\GitHub_Works\JavaPrograming101\src\Lab5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab4.Ex2.Main" />
       <module name="JavaPrograming101" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Lab4.Ex2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab5.Ex1.Main" />
+      <module name="JavaPrograming101" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab5.Ex1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab5.Ex2.Main" />
+      <module name="JavaPrograming101" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab5.Ex2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,28 +141,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainCodeDesign" />
-        <item itemvalue="Application.Ex1 (1)" />
-        <item itemvalue="Application.Ex2 (2)" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -170,33 +168,35 @@
       <workItem from="1596766097013" duration="6505000" />
       <workItem from="1597118354192" duration="1181000" />
       <workItem from="1597121624665" duration="4293000" />
+      <workItem from="1597155428167" duration="14046000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Inspections" timestamp="1595447889025">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="261" y="0" key="#Inspections/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1595447889025" />
-    <state x="663" y="91" width="559" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1597138560341">
-      <screen x="0" y="27" width="1920" height="953" />
+    <state x="530" y="32" width="559" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1597165981419">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="530" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1595515325003" />
+    <state x="530" y="32" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1597165981419" />
     <state x="663" y="91" width="559" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597138560341" />
     <state x="2362" y="69" width="559" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.1920.953/1920.0.1280.1024@1920.0.1280.1024" timestamp="1596773768186" />
     <state x="708" y="418" width="504" height="235" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597127284778">
@@ -207,34 +207,34 @@
       <screen x="0" y="27" width="1920" height="953" />
     </state>
     <state x="743" y="289" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597119530647" />
-    <state width="1874" height="280" key="GridCell.Tab.0.bottom" timestamp="1597140831004">
-      <screen x="0" y="27" width="1920" height="953" />
+    <state width="1481" height="198" key="GridCell.Tab.0.bottom" timestamp="1597169330610">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1481" height="198" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1596215345863" />
+    <state width="1481" height="198" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1597169330610" />
     <state width="1481" height="198" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596514690970" />
     <state width="1234" height="242" key="GridCell.Tab.0.bottom/0.27.1280.953/1920.0.1280.1024@0.27.1280.953" timestamp="1596780716988" />
     <state width="1874" height="280" key="GridCell.Tab.0.bottom/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597140831004" />
     <state width="1234" height="242" key="GridCell.Tab.0.bottom/0.27.1920.953/1920.0.1280.1024@1920.0.1280.1024" timestamp="1596775613787" />
-    <state width="1874" height="280" key="GridCell.Tab.0.center" timestamp="1597140831004">
-      <screen x="0" y="27" width="1920" height="953" />
+    <state width="1481" height="198" key="GridCell.Tab.0.center" timestamp="1597169330610">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1481" height="198" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1596215345862" />
+    <state width="1481" height="198" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1597169330610" />
     <state width="1481" height="198" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1596514690970" />
     <state width="1234" height="242" key="GridCell.Tab.0.center/0.27.1280.953/1920.0.1280.1024@0.27.1280.953" timestamp="1596780716988" />
     <state width="1874" height="280" key="GridCell.Tab.0.center/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597140831004" />
     <state width="1234" height="242" key="GridCell.Tab.0.center/0.27.1920.953/1920.0.1280.1024@1920.0.1280.1024" timestamp="1596775613787" />
-    <state width="1874" height="280" key="GridCell.Tab.0.left" timestamp="1597140831004">
-      <screen x="0" y="27" width="1920" height="953" />
+    <state width="1481" height="198" key="GridCell.Tab.0.left" timestamp="1597169330610">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1481" height="198" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1596215345862" />
+    <state width="1481" height="198" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1597169330610" />
     <state width="1481" height="198" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1596514690970" />
     <state width="1234" height="242" key="GridCell.Tab.0.left/0.27.1280.953/1920.0.1280.1024@0.27.1280.953" timestamp="1596780716988" />
     <state width="1874" height="280" key="GridCell.Tab.0.left/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597140831004" />
     <state width="1234" height="242" key="GridCell.Tab.0.left/0.27.1920.953/1920.0.1280.1024@1920.0.1280.1024" timestamp="1596775613787" />
-    <state width="1874" height="280" key="GridCell.Tab.0.right" timestamp="1597140831004">
-      <screen x="0" y="27" width="1920" height="953" />
+    <state width="1481" height="198" key="GridCell.Tab.0.right" timestamp="1597169330610">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1481" height="198" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1596215345862" />
+    <state width="1481" height="198" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1600.870@0.0.1536.834" timestamp="1597169330610" />
     <state width="1481" height="198" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1596514690970" />
     <state width="1234" height="242" key="GridCell.Tab.0.right/0.27.1280.953/1920.0.1280.1024@0.27.1280.953" timestamp="1596780716988" />
     <state width="1874" height="280" key="GridCell.Tab.0.right/0.27.1920.953/1920.0.1280.1024@0.27.1920.953" timestamp="1597140831004" />
