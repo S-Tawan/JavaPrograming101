@@ -30,13 +30,13 @@ public class Car {
     }
 
     protected void speedUp(){
-        this.setVelocity(this.getVelocity()+1);
         System.out.printf("\t%s Speed up ----> %n",this.brand);
+        this.setVelocity(this.getVelocity()+1);
     }
     protected void speedDown(){
 
-        this.setVelocity(this.getVelocity()-1);
         System.out.printf("\t%s Speed down <---- %n",this.brand);
+        this.setVelocity(Math.max(0,this.getVelocity()-1));
 
     }
     protected void calculate(){
