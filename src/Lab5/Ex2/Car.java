@@ -32,34 +32,36 @@ public class Car {
     }
 
 
-
-    protected void speedUp(){
-        System.out.printf("\t%s Speed up ----> %n",this.brand);
-        this.setVelocity(this.getVelocity()+1);
+    protected void speedUp() {
+        System.out.printf("\t%s Speed up ----> %n", this.brand);
+        this.setVelocity(this.getVelocity() + 1);
     }
-    protected void speedDown(){
 
-        System.out.printf("\t%s Speed down <---- %n",this.brand);
-        this.setVelocity(Math.max(0,this.getVelocity()-1));
+    protected void speedDown() {
+
+        System.out.printf("\t%s Speed down <---- %n", this.brand);
+        this.setVelocity(Math.max(0, this.getVelocity() - 1));
 
     }
-    protected void calculate(){
-        if (this.getGear().equalsIgnoreCase("D") ){
-            this.setPosition(this.getPosition()+velocity);
-        }else {
-            this.setPosition(this.getPosition()-velocity);
+
+    protected void calculate() {
+        if (this.getGear().equalsIgnoreCase("D")) {
+            this.setPosition(this.getPosition() + velocity);
+        } else {
+            this.setPosition(this.getPosition() - velocity);
         }
 
         System.out.println(this);
     }
 
-    protected void changeGear(){
-        if (this.getGear().equalsIgnoreCase("D")){
-            this.setGear("R");
-        }else{
-            this.setGear("D");
+    protected void changeGear() {
+        if (this.velocity == 0) {
+            this.setGear(this.getGear().equalsIgnoreCase("D") ? "R" : "D");
+            System.out.printf("\t%s Change gear to %s %n", this.brand, this.gear);
+        } else {
+            System.out.printf("\t%s --> Please change gear in velocity = 0%n", this.brand);
         }
-        System.out.printf("\t%s Change Gear To %s %n",this.brand,this.gear);
+
     }
 
 

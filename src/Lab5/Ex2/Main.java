@@ -19,7 +19,7 @@ public class Main {
             System.out.println("\n---------------------------------\n");
             System.out.println("Round : " + (i + 1));
             for (Car car : cars) {
-                if (car.getVelocity() == 0 && random.nextBoolean()) {
+                if (random.nextBoolean()) {
                     car.changeGear();
                 }
                 if (random.nextBoolean()) {
