@@ -10,51 +10,26 @@ public class Vaccine {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter Birthdate (yyyy-mm-dd) :");
         String dateString = s.nextLine();
-        LocalDate date = null;
+        LocalDate birthDate = null;
         LocalDate startDate = LocalDate.parse("2021-06-01");
         LocalDate endDate = LocalDate.parse("2021-08-31");
         try {
-            date = LocalDate.parse(dateString);
+            birthDate = LocalDate.parse(dateString);
         } catch (Exception e) {
             System.out.println("Pls check input date");
             main(args);
         }
         VaccineResponse response = new VaccineResponse();
-        Period periodStartDate = Period.between(date, startDate);
-        Period periodEndDate = Period.between(date, endDate);
-        System.out.println("periodStartDate = " + periodStartDate.toString());
-        System.out.println("periodEndDate = " + periodEndDate.toString());
-        System.out.println("periodStartDate.toTotalMonths() = " + periodStartDate.toTotalMonths());
-        System.out.println("periodEndDate.toTotalMonths() = " + periodEndDate.toTotalMonths());
-        Period p2Y = Period.parse("P2Y");
-
-//         if (periodStartDate.getYears() == 2 && periodStartDate.getMonths() == 0 && periodStartDate.getDays()==0){
-        if (periodStartDate.equals(p2Y)) {
+        if (birthDate.isAfter(startDate.minusYears(2).minusDays(1)) && birthDate.isBefore(endDate.minusMonths(6).plusDays(1))) {
+            LocalDate plusYears2 = birthDate.plusYears(2);
+            LocalDate plusMonths6 = birthDate.plusMonths(6);
             response.setEligibleFlag(true);
-            response.setStartDate(startDate.toString());
-            response.setEndDate(startDate.toString());
-        } else if (periodStartDate.getYears() < 2 && periodStartDate.toTotalMonths() >= 6) {
-            System.out.println("-------------------------1-------------------------");
+            response.setStartDate(plusMonths6.isAfter(startDate) ? plusMonths6.toString() : startDate.toString());
+            response.setEndDate(plusYears2.isBefore(endDate) ? plusYears2.toString() : endDate.toString());
+        } else if (birthDate.isBefore(endDate.minusYears(65).plusDays(1))) {
+            LocalDate plusYears65 = birthDate.plusYears(65);
             response.setEligibleFlag(true);
-            response.setStartDate(startDate.toString());
-            LocalDate resEndDate = date.plusYears(2);
-            response.setEndDate(resEndDate.isBefore(endDate) ? resEndDate.toString() : endDate.toString());
-        } else if (periodEndDate.getYears() < 2 && periodEndDate.toTotalMonths() >= 6) {
-            System.out.println("-------------------------2-------------------------");
-            response.setEligibleFlag(true);
-            response.setStartDate(date.plusMonths(6).toString());
-            response.setEndDate(endDate.toString());
-        } else if (periodStartDate.getYears() >= 65) {
-            System.out.println("-------------------------3-------------------------");
-
-            response.setEligibleFlag(true);
-            response.setStartDate(startDate.toString());
-            response.setStartDate(endDate.toString());
-        } else if (periodEndDate.getYears() >= 65) {
-            System.out.println("-------------------------4-------------------------");
-
-            response.setEligibleFlag(true);
-            response.setStartDate(date.plusYears(65).toString());
+            response.setStartDate(startDate.isBefore(plusYears65) ? plusYears65.toString() : startDate.toString());
             response.setEndDate(endDate.toString());
         }
         System.out.println(response);
